@@ -1,10 +1,11 @@
 # Docker image for hls4ml with Vivado
 
-Put the Vivado installation folder here and provide the path to license server.
+Put the Vivado installation archive here and provide the path to license server.
 For example:
 
 ```
 docker build --network=host -t hls4ml-with-vivado --build-arg LICENSE_SERVER="1234@myserver" .
+docker run -it hls4ml-with-vivado bash
 ```
 
 By default, version 2018.2 of Vivado is used.
